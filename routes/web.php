@@ -29,3 +29,5 @@ Route::get('/home', [
 
 
 Route::resource('albums', App\Http\Controllers\AlbumController::class);
+
+Route::resource('logs', App\Http\Controllers\LogsController::class);

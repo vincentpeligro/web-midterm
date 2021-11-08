@@ -20,4 +20,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-Route::get('albums',[AlbumControllerAPI::class,'index']);
+Route::post('login',[AlbumControllerAPI::class,'login']);
+Route::post('register',[AlbumControllerAPI::class,'register']);
+Route::post('reset-password',[AlbumControllerAPI::class,'resetPassword']);
